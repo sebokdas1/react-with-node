@@ -9,6 +9,8 @@ function App() {
       .then(data => setUsers(data))
   }, []);
   const handleAddUsers = (event) => {
+
+    //event.preventDefault for stop reload
     event.preventDefault();
     const name = event.target.name.value;
     const email = event.target.email.value;
